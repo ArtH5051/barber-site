@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анна — Мужские стрижки</title>
+
+  <!-- Шрифты: Playfair Display (заголовки с засечками) + Inter (текст) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================= ХЕДЕР (ВЕРХНЯЯ ШАПКА) ======================= -->
+  <header class="header" id="header">
+    <div class="header__inner">
+
+      <!-- Логотип -->
+      <a href="#hero" class="header__logo">
+        <span class="header__logo-name">АННА</span>
+        <span class="header__logo-sub">— barber —</span>
+      </a>
+
+      <!-- Навигация -->
+      <nav class="header__nav" id="nav">
+        <ul class="header__list">
+          <li><a href="#hero" class="header__link">Главная</a></li>
+          <li><a href="#about" class="header__link">Обо мне</a></li>
+          <li><a href="#services" class="header__link">Услуги</a></li>
+          <li><a href="#portfolio" class="header__link">Галерея</a></li>
+          <li><a href="#reviews" class="header__link">Отзывы</a></li>
+          <li><a href="#contacts" class="header__link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <!-- Кнопка записи (десктоп) -->
+      <a href="#contacts" class="btn header__btn">Записаться</a>
+
+      <!-- Гамбургер (мобильные) -->
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ======================= ОСНОВНОЙ КОНТЕНТ ======================= -->
+  <main class="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <span class="hero__pretitle">— уютный барбер —</span>
+        <h1 class="hero__title">Анна</h1>
+        <p class="hero__since">мужские стрижки · на Вишневой</p>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about block" id="about">
+      <div class="about__grid">
+
+        <!-- Фото -->
+        <div class="about__photo">
+          <img src="img/anna.jpg" alt="Анна за работой">
+        </div>
+
+        <!-- Текст -->
+        <div class="about__text">
+          <div class="circle-icon">✄</div>
+          <h2 class="block__title">Стрижка,<br>которую вы заслужили</h2>
+          <span class="mustache"></span>
+          <p>
+            Я создаю мужские образы уже более 6 лет и точно знаю: хорошая
+            стрижка начинается с комфорта. Работаю индивидуально — без потока,
+            спешки и очередей.
+          </p>
+          <p>
+            Камерный формат «один на один» позволяет уделить каждому клиенту
+            максимум внимания. Мы спокойно подберём форму, которая подходит
+            именно вам, и результат, который вам понравится.
+          </p>
+          <a href="#contacts" class="btn">Записаться на стрижку</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES (Меню услуг) ===================== -->
+    <section class="services block block--cream" id="services">
+      <div class="block__head">
+        <h2 class="block__title">Меню услуг</h2>
+        <span class="mustache mustache--center"></span>
+        <p class="block__subtitle">Честные цены и индивидуальный подход к каждому образу</p>
+      </div>
+
+      <div class="menu">
+
+        <!-- Колонка 1 -->
+        <div class="menu__col">
+          <div class="circle-icon circle-icon--sm">✄</div>
+          <div class="menu__item">
+            <div class="menu__row">
+              <span class="menu__name">Мужская стрижка</span>
+              <span class="menu__dots"></span>
+              <span class="menu__price">1500 ₽</span>
+            </div>
+            <p class="menu__desc">Подбор формы, стрижка, укладка</p>
+          </div>
+          <div class="menu__item">
+            <div class="menu__row">
+              <span class="menu__name">Детская стрижка</span>
+              <span class="menu__dots"></span>
+              <span class="menu__price">1200 ₽</span>
+            </div>
+            <p class="menu__desc">Для мальчиков до 12 лет</p>
+          </div>
+        </div>
+
+        <!-- Колонка 2 -->
+        <div class="menu__col">
+          <div class="circle-icon circle-icon--sm">⌂</div>
+          <div class="menu__item">
+            <div class="menu__row">
+              <span class="menu__name">Оформление бороды</span>
+              <span class="menu__dots"></span>
+              <span class="menu__price">1000 ₽</span>
+            </div>
+            <p class="menu__desc">Моделирование, контур, уход</p>
+          </div>
+          <div class="menu__item">
+            <div class="menu__row">
+              <span class="menu__name">Коррекция усов</span>
+              <span class="menu__dots"></span>
+              <span class="menu__price">500 ₽</span>
+            </div>
+            <p class="menu__desc">Аккуратная форма и линия</p>
+          </div>
+        </div>
+
+        <!-- Колонка 3 -->
+        <div class="menu__col">
+          <div class="circle-icon circle-icon--sm">★</div>
+          <div class="menu__item">
+            <div class="menu__row">
+              <span class="menu__name">Комплекс</span>
+              <span class="menu__dots"></span>
+              <span class="menu__price">2200 ₽</span>
+            </div>
+            <p class="menu__desc">Стрижка + борода под ключ</p>
+          </div>
+          <div class="menu__item">
+            <div class="menu__row">
+              <span class="menu__name">Камуфляж седины</span>
+              <span class="menu__dots"></span>
+              <span class="menu__price">800 ₽</span>
+            </div>
+            <p class="menu__desc">Деликатное тонирование</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="services__cta">
+        <a href="https://wa.me/79991234567" target="_blank" class="btn">Выбрать время</a>
+      </div>
+    </section>
+
+    <!-- ===================== PORTFOLIO ===================== -->
+    <section class="portfolio block" id="portfolio">
+      <div class="block__head">
+        <h2 class="block__title">Мои работы</h2>
+        <span class="mustache mustache--center"></span>
+        <p class="block__subtitle">Несколько образов из моей практики</p>
+      </div>
+
+      <!-- Mosaic Grid -->
+      <div class="gallery">
+        <div class="gallery__item gallery__item--tall"><img src="img/1f.jpg" alt="Работа 1"></div>
+        <div class="gallery__item"><img src="img/2f.jpg" alt="Работа 2"></div>
+        <div class="gallery__item"><img src="img/3f.jpg" alt="Работа 3"></div>
+        <div class="gallery__item gallery__item--tall"><img src="img/4f.jpg" alt="Работа 4"></div>
+        <div class="gallery__item"><img src="img/5f.jpg" alt="Работа 5"></div>
+        <div class="gallery__item"><img src="img/6f.jpg" alt="Работа 6"></div>
+        <div class="gallery__item"><img src="img/7f.jpg" alt="Работа 7"></div>
+        <div class="gallery__item"><img src="img/8f.jpg" alt="Работа 8"></div>
+      </div>
+    </section>
+
+    <!-- ===================== REVIEWS ===================== -->
+    <section class="reviews block block--cream" id="reviews">
+      <div class="block__head">
+        <h2 class="block__title">Что говорят клиенты</h2>
+        <span class="mustache mustache--center"></span>
+      </div>
+
+      <div class="reviews__grid">
+        <article class="review">
+          <span class="review__quote">&ldquo;</span>
+          <p>Наконец-то нашёл своего мастера. Анна делает всё аккуратно и без спешки. Атмосфера спокойная, ухожу всегда довольным.</p>
+          <span class="review__author">— Дмитрий</span>
+        </article>
+        <article class="review">
+          <span class="review__quote">&ldquo;</span>
+          <p>Очень нравится, что нет очередей и толпы. Приходишь к своему времени, и всё внимание только тебе. Стрижка держит форму долго.</p>
+          <span class="review__author">— Артём</span>
+        </article>
+        <article class="review">
+          <span class="review__quote">&ldquo;</span>
+          <p>Водил сына на стрижку — ребёнок не капризничал, всё прошло легко. Светлый уютный салон, рекомендую от души.</p>
+          <span class="review__author">— Сергей</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTS / FOOTER ===================== -->
+    <footer class="contacts block" id="contacts">
+      <div class="block__head">
+        <h2 class="block__title">Запишитесь на стрижку</h2>
+        <span class="mustache mustache--center"></span>
+      </div>
+
+      <div class="contacts__grid">
+
+        <!-- Инфо -->
+        <div class="contacts__info">
+          <a href="tel:+79991234567" class="contacts__phone">+7 (918) 621-34-81</a>
+
+          <div class="contacts__buttons">
+            <a href="https://wa.me/79186213481" target="_blank" class="btn btn--whatsapp">WhatsApp</a>
+            <a href="https://t.me/username" target="_blank" class="btn btn--telegram">Telegram</a>
+          </div>
+
+          <div class="contacts__details">
+            <p><strong>Адрес</strong><br>г. Сочи Вишнёвая улица, 9 <br>2й Этаж</p>
+            <p><strong>Режим работы</strong><br>Пн–Сб: 10:00–20:00 · Вс: выходной</p>
+          </div>
+        </div>
+
+        <!-- Карта -->
+        <div class="contacts__map">
+  <iframe
+    src="https://yandex.ru/map-widget/v1/?ll=39.753506%2C43.621748&z=17&pt=39.753506,43.621748,pm2rdm"
+    width="100%" height="100%" frameborder="0" allowfullscreen="true"
+    style="position:absolute;border:0;"></iframe>
+</div>
+      </div>
+
+      <div class="contacts__copy">© 2026 Анна — Мужские стрижки</div>
+    </footer>
+
+  </main>
+
+  <!-- Затемнение для мобильного меню -->
+  <div class="overlay" id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
