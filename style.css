@@ -568,10 +568,14 @@ h3 {
 }
 
 .contacts__buttons .btn {
-  flex: 1;
-  text-align: center;
-  min-width: 140px;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  flex: 1;             
+  text-align: center;   
+  min-width: 140px;     
+  padding: 16px 20px; 
+  display: inline-flex; 
+  justify-content: center;
+  align-items: center;
+  transition: transform .3s cubic-bezier(0.16, 1, 0.3, 1); 
 }
 
 .contacts__buttons .btn.btn--whatsapp:hover {
