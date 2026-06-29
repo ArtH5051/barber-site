@@ -1,262 +1,538 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Анна — Мужские стрижки</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Анна Барбер | Мужские стрижки на Макаренко в Сочи — Услуги барбера на ул.
+      Вишневая
+    </title>
+    <meta
+      name="description"
+      content="Ищете мужские стрижки на Макаренко? Анна Барбер — персональный мастер (ул. Вишневая, 9, у гимназии 44). Качественные мужские стрижки, оформление бороды, камуфляж седины в уютном кабинете. Запись онлайн!"
+    />
+    <meta
+      name="keywords"
+      content="анна барбер сочи, мужские стрижки макаренко, барбер макаренко, стрижка бороды сочи, мужской парикмахер вишневая, парикмахерская абрикосовая"
+    />
 
-  <!-- Шрифты: Playfair Display (заголовки с засечками) + Inter (текст) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__inner">
+        <a href="#hero" class="header__logo">
+          <span class="header__logo-name">ANNA BARBER</span>
+          <span class="header__logo-sub">personal master</span>
+        </a>
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+        <nav class="header__nav" id="nav">
+          <ul class="header__list">
+            <li><a href="#hero" class="header__link">Главная</a></li>
+            <li><a href="#about" class="header__link">О мастере</a></li>
+            <li><a href="#services" class="header__link">Прайс</a></li>
+            <li><a href="#included" class="header__link">Сервис</a></li>
+            <li><a href="#portfolio" class="header__link">Галерея</a></li>
+            <li><a href="#reviews" class="header__link">Отзывы</a></li>
+            <li><a href="#contacts" class="header__link">Контакты</a></li>
+          </ul>
+        </nav>
 
-  <!-- ======================= ХЕДЕР (ВЕРХНЯЯ ШАПКА) ======================= -->
-  <header class="header" id="header">
-    <div class="header__inner">
+        <a href="#contacts" class="btn header__btn">Записаться</a>
 
-      <!-- Логотип -->
-      <a href="#hero" class="header__logo">
-        <span class="header__logo-name">АННА</span>
-        <span class="header__logo-sub">— barber —</span>
-      </a>
-
-      <!-- Навигация -->
-      <nav class="header__nav" id="nav">
-        <ul class="header__list">
-          <li><a href="#hero" class="header__link">Главная</a></li>
-          <li><a href="#about" class="header__link">Обо мне</a></li>
-          <li><a href="#services" class="header__link">Услуги</a></li>
-          <li><a href="#portfolio" class="header__link">Галерея</a></li>
-          <li><a href="#reviews" class="header__link">Отзывы</a></li>
-          <li><a href="#contacts" class="header__link">Контакты</a></li>
-        </ul>
-      </nav>
-
-      <!-- Кнопка записи (десктоп) -->
-      <a href="#contacts" class="btn header__btn">Записаться</a>
-
-      <!-- Гамбургер (мобильные) -->
-      <button class="burger" id="burger" aria-label="Меню">
-        <span></span><span></span><span></span>
-      </button>
-
-    </div>
-  </header>
-
-  <!-- ======================= ОСНОВНОЙ КОНТЕНТ ======================= -->
-  <main class="main">
-
-    <!-- ===================== HERO ===================== -->
-    <section class="hero" id="hero">
-      <div class="hero__overlay"></div>
-      <div class="hero__content">
-        <span class="hero__pretitle">— уютный барбер —</span>
-        <h1 class="hero__title">Анна</h1>
-        <p class="hero__since">мужские стрижки · на Вишневой</p>
+        <button class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </section>
+    </header>
 
-    <!-- ===================== ABOUT ===================== -->
-    <section class="about block" id="about">
-      <div class="about__grid">
-
-        <!-- Фото -->
-        <div class="about__photo">
-          <img src="img/anna.jpg" alt="Анна за работой">
-        </div>
-
-        <!-- Текст -->
-        <div class="about__text">
-          <div class="circle-icon">✄</div>
-          <h2 class="block__title">Стрижка,<br>которую вы заслужили</h2>
-          <span class="mustache"></span>
-          <p>
-            Я создаю мужские образы уже более 6 лет и точно знаю: хорошая
-            стрижка начинается с комфорта. Работаю индивидуально — без потока,
-            спешки и очередей.
-          </p>
-          <p>
-            Камерный формат «один на один» позволяет уделить каждому клиенту
-            максимум внимания. Мы спокойно подберём форму, которая подходит
-            именно вам, и результат, который вам понравится.
-          </p>
-          <a href="#contacts" class="btn">Записаться на стрижку</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== SERVICES (Меню услуг) ===================== -->
-    <section class="services block block--cream" id="services">
-      <div class="block__head">
-        <h2 class="block__title">Меню услуг</h2>
-        <span class="mustache mustache--center"></span>
-        <p class="block__subtitle">Честные цены и индивидуальный подход к каждому образу</p>
-      </div>
-
-      <div class="menu">
-
-        <!-- Колонка 1 -->
-        <div class="menu__col">
-          <div class="circle-icon circle-icon--sm">✄</div>
-          <div class="menu__item">
-            <div class="menu__row">
-              <span class="menu__name">Мужская стрижка</span>
-              <span class="menu__dots"></span>
-              <span class="menu__price">1500 ₽</span>
-            </div>
-            <p class="menu__desc">Подбор формы, стрижка, укладка</p>
+    <main class="main">
+      <section class="hero" id="hero">
+        <div class="hero__frame">
+          <div class="hero__image-wrapper">
+            <img
+              src="img/123_2.webp"
+              alt="Мужские стрижки и оформление бороды на Макаренко Сочи"
+              class="hero__img"
+            />
           </div>
-          <div class="menu__item">
-            <div class="menu__row">
-              <span class="menu__name">Детская стрижка</span>
-              <span class="menu__dots"></span>
+          <div class="hero__content">
+            <span class="hero__pretitle"
+              >ул. Вишневая, 9 (Рядом с Гимназией №44)</span
+            >
+            <h1 class="hero__title">Анна Барбер<br />Мужские стрижки</h1>
+            <p class="hero__since">
+              Персональный кабинет на Макаренко • Качественные стрижки и точная
+              геометрия бороды в спокойной обстановке без суеты
+            </p>
+            <a href="#contacts" class="btn btn--hero"
+              >Выбрать мессенджер для записи</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <div class="ticker">
+        <div class="ticker__wrapper">
+          <div class="ticker__inner">
+            <span>АННА БАРБЕР</span> ★ <span>МУЖСКИЕ СТРИЖКИ МАКАРЕНКО</span> ★
+            <span>ОФОРМЛЕНИЕ БОРОДЫ</span> ★
+            <span>ВОСК НА ЛИЦЕ — БЕСПЛАТНО</span> ★
+            <span>ЧАС НА КАЖДОГО КЛИЕНТА</span> ★&nbsp;
+          </div>
+          <div class="ticker__inner" aria-hidden="true">
+            <span>АННА БАРБЕР</span> ★ <span>МУЖСКИЕ СТРИЖКИ МАКАРЕНКО</span> ★
+            <span>ОФОРМЛЕНИЕ БОРОДЫ</span> ★
+            <span>ВОСК НА ЛИЦЕ — БЕСПЛАТНО</span> ★
+            <span>ЧАС НА КАЖДОГО КЛИЕНТА</span> ★&nbsp;
+          </div>
+        </div>
+      </div>
+
+      <section class="about block" id="about">
+        <div class="about__grid">
+          <div class="about__text">
+            <h2 class="block__title">Анна — Ваш личный барбер на Вишневой</h2>
+            <p>
+              Я создаю качественные мужские образы, классические и современные
+              стрижки, а также выполняю профессиональный уход за бородой. Мой
+              кабинет на ул. Вишневая — это комфортная и спокойная альтернатива
+              шумным сетевым салонам, работающим на конвейерном потоке.
+            </p>
+            <p>
+              На каждую услугу я закладываю минимум 1 час. Сюда включены мытье
+              головы, укладка и бережное удаление нежелательных волос воском на
+              лице. Я не признаю экспресс-стрижек на скорую руку —
+              индивидуальный подбор формы требует времени, внимания к деталям и
+              изолированной обстановки. Жители улиц Вишневая, Абрикосовая и
+              всего района Макаренко ценят такой персональный подход.
+            </p>
+            <a href="#services" class="btn btn--outline"
+              >Посмотреть меню услуг</a
+            >
+          </div>
+          <div class="about__photo">
+            <div class="image-frame">
+              <img
+                src="img/anna.webp"
+                alt="Мужской парикмахер барбер Анна Сочи"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services block" id="services">
+        <div class="block__head">
+          <h2 class="block__title">Услуги и цены</h2>
+          <p class="block__subtitle">
+            Честный прайс на мужские стрижки и уход за бородой без скрытых
+            накруток за ранг мастера
+          </p>
+        </div>
+
+        <div class="menu">
+          <div class="menu__card">
+            <h3 class="menu__card-title">Мужские стрижки</h3>
+            <div class="menu__card-row">
+              <span class="menu__name">Барбер стрижка</span>
               <span class="menu__price">1200 ₽</span>
             </div>
-            <p class="menu__desc">Для мальчиков до 12 лет</p>
-          </div>
-        </div>
-
-        <!-- Колонка 2 -->
-        <div class="menu__col">
-          <div class="circle-icon circle-icon--sm">⌂</div>
-          <div class="menu__item">
-            <div class="menu__row">
-              <span class="menu__name">Оформление бороды</span>
-              <span class="menu__dots"></span>
+            <p class="menu__desc">
+              Мытье головы, подбор формы под тип лица, стрижка, стайлинг. На
+              работу заложен 1 час.
+            </p>
+            <div class="menu__card-row">
+              <span class="menu__name">Удлиненная стрижка</span>
+              <span class="menu__price">1800 ₽</span>
+            </div>
+            <p class="menu__desc">
+              Профессиональная работа с длинными мужскими волосами, ножницы и
+              сложная текстура.
+            </p>
+            <div class="menu__card-row">
+              <span class="menu__name">Под машинку / 1 насадка</span>
               <span class="menu__price">1000 ₽</span>
             </div>
-            <p class="menu__desc">Моделирование, контур, уход</p>
+            <p class="menu__desc">
+              Быстрая, ровная и аккуратная стрижка на общую минимальную длину с
+              четкими контурами.
+            </p>
           </div>
-          <div class="menu__item">
-            <div class="menu__row">
-              <span class="menu__name">Коррекция усов</span>
-              <span class="menu__dots"></span>
-              <span class="menu__price">500 ₽</span>
-            </div>
-            <p class="menu__desc">Аккуратная форма и линия</p>
-          </div>
-        </div>
 
-        <!-- Колонка 3 -->
-        <div class="menu__col">
-          <div class="circle-icon circle-icon--sm">★</div>
-          <div class="menu__item">
-            <div class="menu__row">
-              <span class="menu__name">Комплекс</span>
-              <span class="menu__dots"></span>
-              <span class="menu__price">2200 ₽</span>
+          <div class="menu__card">
+            <h3 class="menu__card-title">Борода и уход</h3>
+            <div class="menu__card-row">
+              <span class="menu__name">Оформление бороды</span>
+              <span class="menu__price">1000 ₽</span>
             </div>
-            <p class="menu__desc">Стрижка + борода под ключ</p>
-          </div>
-          <div class="menu__item">
-            <div class="menu__row">
+            <p class="menu__desc">
+              Моделирование формы бороды и усов, creation геометрии контуров и
+              уход маслом.
+            </p>
+            <div class="menu__card-row">
               <span class="menu__name">Камуфляж седины</span>
-              <span class="menu__dots"></span>
-              <span class="menu__price">800 ₽</span>
+              <span class="menu__price">1000 ₽</span>
             </div>
-            <p class="menu__desc">Деликатное тонирование</p>
+            <p class="menu__desc">
+              Деликатное и естественное тонирование волос или бороды (скрытие
+              седины за 15 минут).
+            </p>
+            <div class="menu__card-row">
+              <span class="menu__name">Удаление волос воском</span>
+              <span class="menu__price">0 ₽</span>
+            </div>
+            <p class="menu__desc">
+              Зоны лица: нос, межбровье, уши. Бесплатно к любой мужской стрижке
+              по вашему желанию.
+            </p>
+          </div>
+
+          <div class="menu__card menu__card--accent">
+            <h3 class="menu__card-title">Комплексы</h3>
+            <div class="menu__card-row">
+              <span class="menu__name">Комплекс (Стрижка + Борода)</span>
+              <span class="menu__price">2000 ₽</span>
+            </div>
+            <p class="menu__desc">
+              Полное обновление вашего стиля за один визит. Выгодно, гармонично
+              и без лишней спешки.
+            </p>
+            <div class="menu__card-row">
+              <span class="menu__name">Детская стрижка</span>
+              <span class="menu__price">1000 ₽</span>
+            </div>
+            <p class="menu__desc">
+              Для мальчиков до 12 лет. Стильные детские стрижки в спокойной и
+              дружелюбной атмосфере.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="included block" id="included">
+        <div class="block__head">
+          <h2 class="block__title">Включено в каждую стрижку</h2>
+          <p class="block__subtitle">
+            Всё необходимое для безупречного результата уже входит в стоимость
+            услуги
+          </p>
+        </div>
+
+        <div class="included__grid">
+          <div class="included__card">
+            <div class="included__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+              >
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+              </svg>
+            </div>
+            <h3 class="included__card-title">Мытье головы</h3>
+            <p class="included__desc">
+              Комфортное очищение волос до и после стрижки с использованием
+              премиального мужского шампуня.
+            </p>
+          </div>
+
+          <div class="included__card">
+            <div class="included__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+              >
+                <path
+                  d="M12 2s7 5.5 7 10.5c0 3.84-3.13 7-7 7s-7-3.16-7-7C5 7.5 12 2 12 2z"
+                />
+                <path d="M12 22V19" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="included__card-title">Удаление волос воском</h3>
+            <p class="included__desc">
+              Деликатная проработка зон ушей, носа, межбровья и создание четкой
+              окантовки контуров лица.
+            </p>
+          </div>
+
+          <div class="included__card">
+            <div class="included__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="6" cy="6" r="3" />
+                <circle cx="6" cy="18" r="3" />
+                <line x1="20" y1="4" x2="8.12" y2="15.88" />
+                <line x1="14.47" y1="14.48" x2="20" y2="20" />
+                <line x1="8.12" y1="8.12" x2="12" y2="12" />
+              </svg>
+            </div>
+            <h3 class="included__card-title">Коррекция бровей</h3>
+            <p class="included__desc">
+              Аккуратное и точечное прореживание длины триммером или пинцетом
+              для опрятного вида лица.
+            </p>
+          </div>
+
+          <div class="included__card">
+            <div class="included__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+              >
+                <path
+                  d="M4 6h16M4 10h16M4 14h16M4 18h11"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3 class="included__card-title">Стайлинг и советы</h3>
+            <p class="included__desc">
+              Фиксация формы косметическими средствами. Анна всегда подскажет,
+              как легко уложить стрижку дома.
+            </p>
+          </div>
+
+          <div class="included__card">
+            <div class="included__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+              >
+                <path
+                  d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"
+                />
+                <line x1="6" y1="2" x2="6" y2="4" />
+                <line x1="10" y1="2" x2="10" y2="4" />
+                <line x1="14" y1="2" x2="14" y2="4" />
+              </svg>
+            </div>
+            <h3 class="included__card-title">Кофе по-турецки</h3>
+            <p class="included__desc">
+              Традиционный бодрящий напиток, приготовленный в турке специально
+              для вашего комфорта.
+            </p>
+          </div>
+
+          <div class="included__card">
+            <div class="included__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M6 3h12v3H6zM9 6v3h6V6zM5 9h14v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9z"
+                />
+                <circle cx="12" cy="14" r="2" />
+              </svg>
+            </div>
+            <h3 class="included__card-title">Мужской лосьон</h3>
+            <p class="included__desc">
+              Приятный тонизирующий уход, одеколон и дезинфекция зоны шеи в
+              завершении стрижки.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio block" id="portfolio">
+        <div class="block__head">
+          <h2 class="block__title">Галерея работ</h2>
+          <p class="block__subtitle">
+            Примеры оформления бороды и мужских стрижек в кабинете на Макаренко
+          </p>
+        </div>
+
+        <div class="gallery">
+          <div class="gallery__item gallery__item--tall">
+            <img src="img/12f.webp" alt="Мужская стрижка Сочи Макаренко" />
+          </div>
+          <div class="gallery__item">
+            <img src="img/11f.webp" alt="Оформление бороды на ул Вишневая" />
+          </div>
+          <div class="gallery__item">
+            <img src="img/13f.webp" alt="Модная мужская стрижка в Сочи" />
+          </div>
+          <div class="gallery__item gallery__item--tall">
+            <img src="img/15f.webp" alt="Стрижка волос у Анны Сочи" />
+          </div>
+          <div class="gallery__item">
+            <img src="img/14f.webp" alt="Барбер мужской мастер Анна Сочи" />
+          </div>
+          <div class="gallery__item">
+            <img src="img/16f.webp" alt="Текстурная мужская стрижка" />
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews block" id="reviews">
+        <div class="block__head">
+          <h2 class="block__title">Отзывы о мастере</h2>
+        </div>
+
+        <div class="reviews__grid">
+          <article class="review">
+            <div class="review__avatar">
+              <img src="img/Dmitry.webp" alt="Отзыв клиента Дмитрия" />
+            </div>
+            <p>
+              «Наконец-то нашёл своего мастера в Сочи. Анна делает всё аккуратно
+              и без спешки. В кабинете на Вишневой просторно, светло, вид на
+              парк. Отдыхаешь головой, пока тебя стригут, а не сидишь спина к
+              спине в шумном салоне».
+            </p>
+            <span class="review__author">— Дмитрий</span>
+          </article>
+
+          <article class="review">
+            <div class="review__avatar">
+              <img src="img/Artem.webp" alt="Отзыв клиента Артема" />
+            </div>
+            <p>
+              «Огромный плюс — простая запись через мессенджер лично к Анне.
+              Получаю стрижку уровня дорогих барбершопов по абсолютно адекватной
+              цене на Макаренко, и время за хорошей беседой летит незаметно».
+            </p>
+            <span class="review__author">— Артём</span>
+          </article>
+
+          <article class="review">
+            <div class="review__avatar">
+              <img src="img/Elena.webp" alt="Отзыв Елены" />
+            </div>
+            <p>
+              «Привожу сына на стрижку на Макаренко уже не первый год. Всегда
+              довольны результатом. Очень чисто, уютно, Анна невероятно приятная
+              в общении и настоящий профессионал своего дела».
+            </p>
+            <span class="review__author">— Елена</span>
+          </article>
+        </div>
+      </section>
+
+      <footer class="contacts block" id="contacts">
+        <div class="contacts__grid">
+          <div class="contacts__info">
+            <h2 class="block__title">Запись к мастеру</h2>
+            <a href="tel:+79186213481" class="contacts__phone"
+              >+7 (918) 621-34-81</a
+            >
+
+            <div class="contacts__buttons">
+              <a
+                href="https://wa.me/79186213481"
+                target="_blank"
+                class="btn btn--whatsapp"
+                >WhatsApp</a
+              >
+              <a
+                href="https://t.me/+79186213481"
+                target="_blank"
+                class="btn btn--telegram"
+                >Telegram</a
+              >
+              <a
+                href="https://max.ru/c/79186213481"
+                target="_blank"
+                class="btn btn--max"
+                >MAX</a
+              >
+            </div>
+
+            <div class="contacts__details">
+              <p>
+                <strong>ЛОКАЦИЯ</strong>г. Сочи, микрорайон Макаренко, ул.
+                Вишнёвая, д. 9, 2-й этаж
+              </p>
+              <p>
+                <strong>ГРАФИК РАБОТЫ</strong>Пн–Сб: 10:00–20:00 • Вс: выходной
+              </p>
+            </div>
+          </div>
+
+          <div class="contacts__map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?ll=39.753506%2C43.621748&z=17&pt=39.753506,43.621748,pm2rdm"
+              width="100%"
+              height="100%"
+              frameborder="0"
+              allowfullscreen="true"
+              style="position: absolute; border: 0"
+            ></iframe>
           </div>
         </div>
 
-      </div>
-
-      <div class="services__cta">
-        <a href="https://wa.me/79991234567" target="_blank" class="btn">Выбрать время</a>
-      </div>
-    </section>
-
-    <!-- ===================== PORTFOLIO ===================== -->
-    <section class="portfolio block" id="portfolio">
-      <div class="block__head">
-        <h2 class="block__title">Мои работы</h2>
-        <span class="mustache mustache--center"></span>
-        <p class="block__subtitle">Несколько образов из моей практики</p>
-      </div>
-
-      <!-- Mosaic Grid -->
-      <div class="gallery">
-        <div class="gallery__item gallery__item--tall"><img src="img/1f.jpg" alt="Работа 1"></div>
-        <div class="gallery__item"><img src="img/2f.jpg" alt="Работа 2"></div>
-        <div class="gallery__item"><img src="img/3f.jpg" alt="Работа 3"></div>
-        <div class="gallery__item gallery__item--tall"><img src="img/4f.jpg" alt="Работа 4"></div>
-        <div class="gallery__item"><img src="img/5f.jpg" alt="Работа 5"></div>
-        <div class="gallery__item"><img src="img/6f.jpg" alt="Работа 6"></div>
-        <div class="gallery__item"><img src="img/7f.jpg" alt="Работа 7"></div>
-        <div class="gallery__item"><img src="img/8f.jpg" alt="Работа 8"></div>
-      </div>
-    </section>
-
-    <!-- ===================== REVIEWS ===================== -->
-    <section class="reviews block block--cream" id="reviews">
-      <div class="block__head">
-        <h2 class="block__title">Что говорят клиенты</h2>
-        <span class="mustache mustache--center"></span>
-      </div>
-
-      <div class="reviews__grid">
-        <article class="review">
-          <span class="review__quote">&ldquo;</span>
-          <p>Наконец-то нашёл своего мастера. Анна делает всё аккуратно и без спешки. Атмосфера спокойная, ухожу всегда довольным.</p>
-          <span class="review__author">— Дмитрий</span>
-        </article>
-        <article class="review">
-          <span class="review__quote">&ldquo;</span>
-          <p>Очень нравится, что нет очередей и толпы. Приходишь к своему времени, и всё внимание только тебе. Стрижка держит форму долго.</p>
-          <span class="review__author">— Артём</span>
-        </article>
-        <article class="review">
-          <span class="review__quote">&ldquo;</span>
-          <p>Водил сына на стрижку — ребёнок не капризничал, всё прошло легко. Светлый уютный салон, рекомендую от души.</p>
-          <span class="review__author">— Сергей</span>
-        </article>
-      </div>
-    </section>
-
-    <!-- ===================== CONTACTS / FOOTER ===================== -->
-    <footer class="contacts block" id="contacts">
-      <div class="block__head">
-        <h2 class="block__title">Запишитесь на стрижку</h2>
-        <span class="mustache mustache--center"></span>
-      </div>
-
-      <div class="contacts__grid">
-
-        <!-- Инфо -->
-        <div class="contacts__info">
-          <a href="tel:+79991234567" class="contacts__phone">+7 (918) 621-34-81</a>
-
-          <div class="contacts__buttons">
-            <a href="https://wa.me/79186213481" target="_blank" class="btn btn--whatsapp">WhatsApp</a>
-            <a href="https://t.me/username" target="_blank" class="btn btn--telegram">Telegram</a>
-          </div>
-
-          <div class="contacts__details">
-            <p><strong>Адрес</strong><br>г. Сочи Вишнёвая улица, 9 <br>2й Этаж</p>
-            <p><strong>Режим работы</strong><br>Пн–Сб: 10:00–20:00 · Вс: выходной</p>
-          </div>
+        <div class="contacts__copy">
+          © 2026 ANNA BARBER | Кабинет мужских стрижек на Вишневой. Все права
+          защищены.
         </div>
+      </footer>
+    </main>
 
-        <!-- Карта -->
-        <div class="contacts__map">
-  <iframe
-    src="https://yandex.ru/map-widget/v1/?ll=39.753506%2C43.621748&z=17&pt=39.753506,43.621748,pm2rdm"
-    width="100%" height="100%" frameborder="0" allowfullscreen="true"
-    style="position:absolute;border:0;"></iframe>
-</div>
-      </div>
+    <div class="overlay" id="overlay"></div>
 
-      <div class="contacts__copy">© 2026 Анна — Мужские стрижки</div>
-    </footer>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BarberShop",
+        "name": "Анна Барбер | Мужские стрижки Макаренко",
+        "image": "https://yourdomain.ru/img/123_2.webp",
+        "@id": "https://yourdomain.ru/#barbershop",
+        "url": "https://yourdomain.ru",
+        "telephone": "+79186213481",
+        "priceRange": "1000RUB - 2000RUB",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Вишнёвая, д. 9, 2-й этаж",
+          "addressLocality": "Сочи, микрорайон Макаренко",
+          "postalCode": "354000",
+          "addressCountry": "RU"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.621748,
+          "longitude": 39.753506
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "10:00",
+          "closes": "20:00"
+        }
+      }
+    </script>
 
-  </main>
-
-  <!-- Затемнение для мобильного меню -->
-  <div class="overlay" id="overlay"></div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
