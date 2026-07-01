@@ -738,3 +738,78 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
+/* Исправляем главный контейнер первого экрана */
+.hero__frame {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+/* Настраиваем обертку картинки */
+.hero__image-wrapper {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 250px !important;
+    overflow: hidden !important;
+}
+
+.hero__img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+/* Чиним текстовый блок, чтобы он не обрезался */
+.hero__content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px 15px !important; /* Уменьшаем боковые отступы */
+    box-sizing: border-box !important;
+}
+
+/* Адаптируем заголовок под узкие экраны (iPhone 12 и меньше) */
+@media (max-width: 440px) {
+    .hero__title {
+        font-size: 28px !important; /* Немного уменьшаем шрифт, чтобы буквы не вылезали */
+        line-height: 1.2 !important;
+        -webkit-hyphens: auto !important;
+        -ms-hyphens: auto !important;
+        hyphens: auto !important; /* Если слово слишком длинное, оно аккуратно перенесется */
+    }
+    
+    .hero__pretitle {
+        font-size: 11px !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Корректируем кнопку, чтобы текст внутри помещался */
+    .btn--hero {
+        width: 100% !important;
+        padding: 14px 10px !important;
+        font-size: 14px !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* Страхуем всю страницу от горизонтального скролла */
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* Чиним перенос знака рубля (правка Анны) */
+.menu__price {
+    white-space: nowrap !important;
+}
+
+/* Добавляем мягкие переносы слогов в блок "О мастере" */
+.about__text p {
+    -webkit-hyphens: auto !important;
+    -ms-hyphens: auto !important;
+    hyphens: auto !important;
+}
